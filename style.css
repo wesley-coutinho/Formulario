@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   
+}
+
+h1{
+    
+    text-align: center;
+    color: rgb(96, 96, 122);
+}
+
+.container{
+
+   background-color: rgb(29, 78, 78); 
+   display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 14px;
+    padding: 20px;
+       
+}
+
+.container input{
+    border-radius: 8px;
+    width: 140%;
+    padding: 10px;
+    border: 2px solid rgb(34, 121, 116);    
+    cursor: text;
+    
+}
+
+
+.container label{
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 5px;
+    
+}
+
+button{
+   margin: 3%;
+   cursor: pointer;
+   border-radius: 8px;
+   width: 27%; 
+   padding: 4px;
+   font-weight: bold;   
+}
+
+/*.a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+
+    
+    visibility: hidden;
+    
+}*/
+
+.error{
+    color: brown;
+    font-size:16px;
+    border: red;;
+}
+
+.error-hidden{
+    display: none;
+}
+
+
+    
+
+.invalido{
+    border: 1px solid rgb(243, 16, 16);
+}
+
+.agradecimento{
+    padding: 18px;
+    text-align: center;
+    color:rgb(25, 117, 87);
+}

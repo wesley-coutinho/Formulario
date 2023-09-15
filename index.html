@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   <div class="container-up"> 
+    <h1>Formulário</h1>
+
+    <div class="container" id="container">
+        <form>
+            <div class="container-2">
+                <label name="nome">Nome:</label>
+                <input name="nome" type="text" id="nome"
+                placeholder="Digite seu nome"/>
+                <p class="error error-hidden">Nome obrigtório</p>
+            
+            </div>
+
+            <div class="container-2">
+                <label for="email">Email:</label>
+                <input name="email" type="text" id="email" placeholder="Digite seu email"/>
+                <p class="error error-hidden">Email Obrigatório</p>
+            </div>
+
+            <div class ="container-2">
+                <label for="senha">Senha:</label>
+                <input name="senha" type="password" id="senha" onchange='conferir_senha();' placeholder="Digite sua senha"/>
+                <p class="error error-hidden">Digite sua senha</p>
+            </div>
+
+            <div class="container-2">
+                <label for="confirmar_senha">Confirme a senha</label>
+               <input name="confirmar_senha" type="password" id="confirmar_senha" onchange='conferir_senha();' placeholder="Confirme sua senha"/>
+               <p class="error error-hidden">Confirme sua senha</p>
+            </div>
+
+            <div class="container-2">
+                <label for="data">Data de nascimento</label>
+                <input name="data" type="date" id="data">
+                <p class="error error-hidden">Digite data de nascimento</p>
+            </div>
+
+            <div class="container-2">
+                <label for="genero">Gênero</label>
+                <select name="genero" id="genero">
+                    <option value="">--Selecione--</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+                <p class="error error-hidden">Escolha o gênero</p>
+            </div>
+
+            <div class="container-2 error">
+                <label for=telefone>Telefone:</label>
+                <input name="telefone" type="tel" id="telefone"   placeholder="(xx) xxxx-xxxx" 
+                pattern="^[0-9]{2}[0-9]{4,5}[0-9]{4}">  
+                <p class="error error-hidden">Digite seu número</p> 
+            </div>
+
+            <div class="botao_enviar">
+                <button
+                    type="submit"> Enviar
+                </button>
+            
+            </div>
+        </form>
+
+    </div>
+</div>   
+<div Class="agradecimento error-hidden">
+    <h2>Cadastro concluído com sucesso!</h2>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
