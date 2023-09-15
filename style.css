@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    
    
 }
 
@@ -19,12 +20,13 @@ h1{
     width: 100%;
     border-radius: 14px;
     padding: 20px;
+   
        
 }
 
 .container input{
     border-radius: 8px;
-    width: 140%;
+    width: 150%;
     padding: 10px;
     border: 2px solid rgb(34, 121, 116);    
     cursor: text;
@@ -50,15 +52,6 @@ button{
    font-weight: bold;   
 }
 
-/*.a{
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-
-    
-    visibility: hidden;
-    
-}*/
 
 .error{
     color: brown;
@@ -81,4 +74,23 @@ button{
     padding: 18px;
     text-align: center;
     color:rgb(25, 117, 87);
+}
+
+@media screen and (max-width: 768px){
+    form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    button{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 780px){
+   .container input{
+        width: 100%;
+    }
 }
